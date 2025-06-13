@@ -1,5 +1,134 @@
 <!DOCTYPE html>
-<html>
-<head><title>個人網站</title></head>
-<body><h1>你好，我是桐桐！</h1></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>個人網頁</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">個人網頁</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active"><a class="nav-link" href="#about">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">教育背景</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">經驗與實習</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">專業技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">專案作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#articles">文章</a></li>
+          <li class="nav-item"><a class="nav-link" href="#honors">獲獎與榮譽</a></li>
+          <li class="nav-item"><a class="nav-link" href="#photos">活動照片</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="container my-5" id="about">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="images/本人照片.jpg" class="img-fluid w-50"/>
+      </div>
+      <div class="col-md-8">
+        <h2>關於我</h2>
+        <p>我是關筠曈，目前就讀於國立聯合大學資管系。樂於接受挑戰，勇於嘗試與學習。心思細膩，能從多方面思考。興趣是唱歌。希望未來能多多累積經驗，並學到許多東西，提升各方面能力。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" id="education">
+    <h2>教育背景</h2>
+    <ul>
+      <li>國立聯合大學 資訊管理系（2023-迄今）</li>
+      <li>高雄市立左營高中（2020-2023）</li>
+      <li>重要課程：程式設計、資料庫程式設計、前端網頁程式設計</li>
+      <li>專案：使用PHP及MySQL製作"歌唱比賽管理系統"</li>
+    </ul>
+  </section>
+
+  <section class="container my-5" id="experience">
+    <h2>經驗與實習</h2>
+    <p>目前尚無實習經驗，但積極參與課堂，熟悉團隊合作。</p>
+  </section>
+
+  <section class="container my-5" id="skills">
+    <h2>專業技能</h2>
+    <ul>
+      <li>程式語言：Python、C++、HTML</li>
+      <li>資料庫：MySQL</li>
+      <li>網頁開發：Bootstrap、PHP</li>
+    </ul>
+  </section>
+
+  <section class="container my-5" id="projects">
+    <h2>專案作品</h2>
+    <ul>
+      <li>
+        <strong>歌唱比賽管理系統</strong><br>
+        一套使用PHP與MySQL的比賽管理系統，包含參賽者報名與評審評分功能，
+        具備自動計算總分、排序排名與晉級、淘汰功能。會自動同步各賽程資料，提升比賽管理效率。
+      </li>
+      <li>
+        <strong>行動教育車計畫(團隊項目)</strong><br>
+        透過載著科技器材的行動車深入苗栗偏鄉校園，運用既有學校電腦設備
+        ，結合免費線上3D建模工具與3D列印設備，並現場展示部分作品列印
+        。課程亦融入顯微鏡教學與自然觀察活動。激發學生對生活與知識的探索，強化學習動力。<br>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container my-5" id="articles">
+    <h2>文章</h2>
+    <article>
+      <h5><strong>對資管領域的學習心得</strong></h5>
+      <p>讀了兩年資管系後，我覺得資管不僅僅是寫程式，更是運用資訊技術解決問題的好方法。
+         很感謝系上老師訓練我們城市的思考邏輯，以及創意的思考技巧，讓一開始是白紙的我們，
+         漸漸建立起能靠自己運用資訊技術解決問題的能力。</p>
+      <h5><strong>學習過程中的挑戰與解決方法</strong></h5>
+      <p>在期末專案的初期，我面臨最大的挑戰是對AI的過度依賴。什麼都不自己想，就急著讓GPT規畫下一步，
+        但得到的建議往往不符合需求，或因超過自己的理解範圍，而無法直接使用。這讓我意識到，
+        專案是自己構想出來的，只有自己最清楚想實現什麼樣的功能與效果。</p>
+      <p>因此，我開始改變撰寫方式，先要求自己思考架構與細節，查找相關函式、理解它們的功能與差異，
+        再查找教材，最後才帶著明確且具體的問題向GPT協助。這樣不僅提高了效率，也幫助我更深入地理解課程內容。最
+        終，我發現與其期待AI給出正確答案，不如回到課本尋找答案，因為有些知識GPT長篇大論不一定看得懂
+        ，但教材卻簡短且清楚，這樣做雖然花的時間未必更少，但能更有方向，也能學到更多</p>
+    </article>
+  </section>
+
+  <section class="container my-5" id="honors">
+    <h2>獲獎與榮譽</h2>
+    <p>目前尚無，持續努力中</p>
+  </section>
+
+  <section class="container my-5" id="photos">
+  <h2 class="mb-4">參與活動照片</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/社團動態展.png" class="card-img-top" alt="社團動態展">
+        <div class="card-body">
+          <h5 class="card-title">社團動態展</h5>
+          <p class="card-text">大一是阿卡貝拉社社員，代表社團在活動中參與展出，提升了我的團隊合作與溝通能力。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="images/校內唱歌比賽.jpg" class="card-img-top" alt="校內歌唱比賽">
+        <div class="card-body">
+          <h5 class="card-title">校內歌唱比賽</h5>
+          <p class="card-text">大二參與歌唱比賽，練習站上舞台表達自我，也訓練了我的表達能力與自信心。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p class="text-end"><a href="#">Back to top</a></p>
+</body>
 </html>
